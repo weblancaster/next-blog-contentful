@@ -3,8 +3,6 @@ import DateComponent from "../components/date";
 import CoverImage from "../components/cover-image";
 
 export default function HeroPost({ slug, title, thumbnail, date }) {
-  console.log("slug", slug);
-
   return (
     <section>
       {thumbnail && (

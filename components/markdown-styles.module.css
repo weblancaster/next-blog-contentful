@@ -16,3 +16,16 @@
 .markdown h3 {
   @apply text-2xl mt-8 mb-4 leading-snug;
 }
+
+
+.markdown pre,
+.markdown code {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+}
+
+.markdown pre {
+  background-color: #fafafa;
+  font-size: .8rem;
+  overflow-x: scroll;
+  padding: 1.125em;
+}
