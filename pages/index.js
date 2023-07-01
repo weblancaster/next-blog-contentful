@@ -23,6 +23,7 @@ export default function Index({ preview, allPosts }) {
               description={heroPost.description}
               thumbnail={heroPost.thumbnail}
               date={heroPost.date}
+              slug={heroPost.slug}
             />
           )}
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}

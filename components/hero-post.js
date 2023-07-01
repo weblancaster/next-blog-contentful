@@ -1,16 +1,17 @@
 import Link from "next/link";
 import DateComponent from "../components/date";
 import CoverImage from "../components/cover-image";
-import slugify from "../utils/slugfy";
 
-export default function HeroPost({ title, thumbnail, date }) {
-  const slug = slugify(title);
+export default function HeroPost({ slug, title, thumbnail, date }) {
+  console.log("slug", slug);
 
   return (
     <section>
-      <div className="mb-8 md:mb-16">
-        <CoverImage title={title} slug={slug} thumbnail={thumbnail} />
-      </div>
+      {thumbnail && (
+        <div className="mb-8 md:mb-16">
+          <CoverImage title={title} slug={slug} thumbnail={thumbnail} />
+        </div>
+      )}
       <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
         <div>
           <h3 className="mb-4 text-4xl lg:text-6xl leading-tight">

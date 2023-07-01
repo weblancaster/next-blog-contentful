@@ -13,10 +13,11 @@ import {
 } from "../../lib/api";
 import PostTitle from "../../components/post-title";
 import { CMS_NAME } from "../../lib/constants";
-import slugfy from "../../utils/slugfy";
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter();
+
+  console.log(post);
 
   if (!router.isFallback && !post) {
     return <ErrorPage statusCode={404} />;
@@ -55,7 +56,7 @@ export default function Post({ post, morePosts, preview }) {
 }
 
 export async function getStaticProps({ params, preview = false }) {
-  const data = await getBlogPostAndMoreBlogPosts(params.title, preview);
+  const data = await getBlogPostAndMoreBlogPosts(params.slug, preview);
 
   return {
     props: {
@@ -69,7 +70,7 @@ export async function getStaticProps({ params, preview = false }) {
 export async function getStaticPaths() {
   const allPosts = await getAllBlogPostsWithSlug();
   return {
-    paths: allPosts?.map(({ title }) => `/posts/${slugfy(title)}`) ?? [],
+    paths: allPosts?.map(({ slug }) => `/posts/${slug}`) ?? [],
     fallback: true,
   };
 }

@@ -13,12 +13,12 @@ export default function Navigation() {
       >
         About
       </a>
-      <a
+      {/* <a
         href="/contact"
         className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-400"
       >
         Posts
-      </a>
+      </a> */}
     </nav>
   );
 }
