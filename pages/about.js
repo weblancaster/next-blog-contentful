@@ -22,7 +22,7 @@ export default function AboutMe() {
 
             <p className="my-4 text-lg">
               I love sharing my knowledge and ideas with the tech community. You
-              might have caught me giving talks{" "}
+              might have caught me giving{" "}
               <a
                 href="https://speakerdeck.com/weblancaster"
                 target="_blank"
@@ -35,7 +35,7 @@ export default function AboutMe() {
             </p>
 
             <p className="my-4 text-lg">
-              Guess what? I even made it into a cool book{" "}
+              I even made it into a cool book{" "}
               <a
                 href="https://www.amazon.com/14-Habits-Highly-Productive-Developers-ebook/dp/B08BF74RRG"
                 target="_blank"
@@ -45,15 +45,16 @@ export default function AboutMe() {
               </a>{" "}
               that features top software engineers! It's a great feeling to be
               recognized and have participated in so many different projects,
-              like building an open source desktop music player to support
-              Soundcloud. It was a fun challenge, and I learned a lot from it,
-              especially by having an average of 16 thousand daily users.
-            </p>
-
-            <p className="my-4 text-lg">
-              Oh, and you might have seen me featured on some tech news websites
-              too. They dig my work and accomplishments, and it's a great
-              feeling to have my expertise shared with a wider audience.
+              like when I built{" "}
+              <a
+                href="https://github.com/Soundnode/soundnode-app"
+                target="_blank"
+                className="text-blue-500 hover:underline"
+              >
+                an open source desktop music player
+              </a>{" "}
+              to support Soundcloud for desktop. You might have seen this app
+              featured on some tech news websites or might have even used it.
             </p>
 
             <p className="my-4 text-lg">
@@ -63,18 +64,10 @@ export default function AboutMe() {
             </p>
 
             <p className="my-4 text-lg">
-              So, yeah, I'm all about pushing boundaries, solving problems, and
-              creating great applications. JavaScript is my jam, and I'm known
-              for building robust and user-friendly apps that scale. I love
-              working with React, Node.js, and TypeScript, and I'm always
-              looking for new challenges.
-            </p>
-
-            <p className="my-4 text-lg">
-              When I'm not geeking out, you'll find me pursuing my personal
-              interests, chilling with fellow tech enthusiasts, and having a
-              blast in the software engineering community. It's an awesome ride,
-              and I'm thrilled to be part of it!
+              I'm all solving problems, and creating great applications.
+              JavaScript is my jam, and I'm known for building robust and
+              user-friendly apps that scale. I love working with React, Node.js,
+              and TypeScript, and I'm always looking for new challenges.
             </p>
           </div>
         </Container>
