@@ -7,7 +7,7 @@ export default function HeroPost({ slug, title, thumbnail, date }) {
     <section>
       {thumbnail && (
         <div className="mb-8 md:mb-16">
-          <CoverImage title={title} slug={slug} thumbnail={thumbnail} />
+          <CoverImage title={title} slug={slug} url={thumbnail} />
         </div>
       )}
       <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">

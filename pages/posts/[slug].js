@@ -37,7 +37,7 @@ export default function Post({ post, morePosts, preview }) {
               </Head>
               <PostHeader
                 title={post.title}
-                thumbnail={post.thumbnail}
+                thumbnail={post?.image?.url}
                 date={post.date}
               />
               <PostBody post={post.post} />
