@@ -29,3 +29,14 @@
   overflow-x: scroll;
   padding: 1.125em;
 }
+
+.markdown a,
+.markdown a:visited {
+  color: #3498db;
+}
+
+.markdown a:hover,
+.markdown a:focus,
+.markdown a:active {
+  color: #2980b9;
+}
