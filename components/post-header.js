@@ -7,8 +7,8 @@ export default function PostHeader({ title, thumbnail, date }) {
     <>
       <PostTitle>{title}</PostTitle>
       {thumbnail && (
-        <div className="mb-8 md:mb-16 sm:mx-0">
-          <CoverImage title={title} url={thumbnail} />
+        <div className="mb-8 w-full md:mb-16 sm:mx-0">
+          <div className="max-w-3xl m-auto"><CoverImage title={title} url={thumbnail} /></div>
         </div>
       )}
       <div className="max-w-2xl mx-auto">
